@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3d3ec6e-99b2-4574-aa4c-973c5f2d64e3">
+  <producedTypes>
+    <objectType typeId="d747e9f9-7e31-4466-af1e-278591b04a46" valueTypeId="43e3dc5c-7b3b-4feb-91d5-6f43ada6f69d"/>
+    <refType typeId="c52d430f-3a97-4fbb-bcdd-177196d0baa8" valueTypeId="d72f272f-2155-41ad-a3ef-584cbd2af0ec"/>
+    <selectionType typeId="e28ad906-edd4-4897-b682-951d56e538c7" valueTypeId="67457c5d-8646-4e49-a260-e899b945e84b"/>
+    <listType typeId="adda9d08-74b0-49ae-919c-285305ed2e66" valueTypeId="7cc2f7e6-63bf-445b-be19-902723d757d2"/>
+    <managerType typeId="7631e620-4339-4a7e-b74d-4d26385ba30b" valueTypeId="92e6b21d-b7ed-4937-a41e-26ad51429fb5"/>
+  </producedTypes>
+  <name>ут_Уровни</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровни (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ут_Уровни.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ут_Уровни.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="242f8b14-6b7c-42e2-a2cd-92f106570a86">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

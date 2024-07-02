@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0158da1-ef28-4b2a-9e5c-56b19247e45e">
+  <producedTypes>
+    <selectionType typeId="a06bab25-5ae1-42be-a817-6f2757f34139" valueTypeId="50311314-b51a-41f6-b684-a23fd5cedada"/>
+    <listType typeId="237accaf-4413-48d2-b5bb-baf3fbb820e0" valueTypeId="af6b544e-8baf-4fb3-8a77-4e0400beb2e5"/>
+    <managerType typeId="2c6bf288-ae18-4c34-bb49-5a9e9533c3df" valueTypeId="5a70c6ee-bc52-4dbf-86b8-249993e3cb7a"/>
+    <recordSetType typeId="b9cc3e5d-8db2-450f-b1a3-e551b8b3653b" valueTypeId="722ebe9b-9b90-4807-b3ac-b4ee153431ab"/>
+    <recordKeyType typeId="5447e8d2-ba02-45e0-bb9b-90b47988fbc6" valueTypeId="a72fb21b-932e-493f-a3ec-5e9c7226c3e7"/>
+    <recordType typeId="658a4013-16c3-4d24-8419-38e7d8c62405" valueTypeId="e6510cc4-7d22-44d8-8da8-ee51b738a140"/>
+    <recordManagerType typeId="787a4bdb-784c-4d53-8b32-8af46c4c78ed" valueTypeId="608a6782-3846-42a2-8036-a6f9e30974dc"/>
+  </producedTypes>
+  <name>ут_РазмерАванса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размер аванса (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3a28f81e-69ee-4551-b096-4cdfe3340663">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

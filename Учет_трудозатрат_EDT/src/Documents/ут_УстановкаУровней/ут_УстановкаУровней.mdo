@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ba6bfbf-459c-4d87-be55-c429ee2fa7ab">
+  <producedTypes>
+    <objectType typeId="d25e10fb-5b74-45e6-9001-996c317ad4c3" valueTypeId="46f03c19-2135-448b-9587-cea7233da343"/>
+    <refType typeId="fe2df381-fb51-43e5-80d7-582294a6b1c8" valueTypeId="9964c00e-f029-4b84-92e9-ab20a4a68209"/>
+    <selectionType typeId="1552f6e5-721a-44c0-ac6d-4d8fefff650f" valueTypeId="3514b7cf-86f1-464a-b503-e65f0f313926"/>
+    <listType typeId="8eb89918-9f96-45d2-9b17-b52f24bbbd8b" valueTypeId="e6583f09-3cfd-4714-a11b-f369bbe6b347"/>
+    <managerType typeId="8fbc0475-56c5-46dc-868b-b9a580d82be5" valueTypeId="64a001cc-b548-4a20-9dee-0547e0bd7556"/>
+  </producedTypes>
+  <name>ут_УстановкаУровней</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка уровней (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ут_УстановкаУровней.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ут_УстановкаУровней.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ут_УровниРаботника</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="4795641e-ea74-4144-bdee-a96304f64aab">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="e5a3b665-727c-42fe-bed8-e287d4e084bf">
+    <producedTypes>
+      <objectType typeId="28e1b235-ccfd-4fa0-99fc-d0d7bca748ea" valueTypeId="117d4ee3-3d77-495c-a569-fad9986d7ae3"/>
+      <rowType typeId="f11c71de-a58c-46ff-a6d1-ac82791c14c5" valueTypeId="13f81053-4f39-4eee-b1d8-84062821fa93"/>
+    </producedTypes>
+    <name>Уровни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровни</value>
+    </synonym>
+    <attributes uuid="bc774f24-f854-4372-8e59-704b732891f1">
+      <name>Уровень</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уровень</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ут_Уровни</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5788ca42-f609-430e-98ad-990975e767c4">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

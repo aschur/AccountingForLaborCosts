@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e1bf235-7d91-4c02-a937-7277b175acbd">
+  <producedTypes>
+    <selectionType typeId="d635fb01-9dfb-4b73-b18c-04fc324665bf" valueTypeId="6ca42443-88b7-45a4-a8f1-1eceed644922"/>
+    <listType typeId="a8d26775-d407-44d5-b4f8-1db0ee9f0a8b" valueTypeId="21affb6e-2ce9-4f30-9f79-96a4d964a587"/>
+    <managerType typeId="99a6611f-c87a-4476-87db-3b0ace3508dc" valueTypeId="655f9044-a389-4d39-a4f2-cdd76d2359e6"/>
+    <recordSetType typeId="be886807-918a-4ff8-a3f9-c0539bddc520" valueTypeId="c41bbc8e-2844-4ad7-b651-947f94065b8e"/>
+    <recordKeyType typeId="12ce65d6-9d95-4e8c-945f-3ed002f8215d" valueTypeId="8d9ed187-23ae-4646-8caf-ce62922ae75d"/>
+    <recordType typeId="abc0911a-69ff-4e99-893d-9e1381fdad48" valueTypeId="8edd9d3d-668a-426e-b111-e17360b1314d"/>
+  </producedTypes>
+  <name>ут_УчетПлановыхТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет плановых трудозатрат (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="b2133847-6820-4b26-901f-1a35b8be28f4">
+    <name>План</name>
+    <synonym>
+      <key>ru</key>
+      <value>План</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="c47c314b-54f9-4185-9cfd-982ce3f41c23">
+    <name>Подзадача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подзадача</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ут_ПодзадачиВнутреннегоУчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

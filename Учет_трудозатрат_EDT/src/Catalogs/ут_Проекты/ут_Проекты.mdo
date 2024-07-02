@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f19c70e7-488d-41b7-96b8-9fce8578f528">
+  <producedTypes>
+    <objectType typeId="5be91d09-0850-4704-b040-786978b5fc55" valueTypeId="bee2185b-ef3d-4703-a3c2-f866bf8ffc1a"/>
+    <refType typeId="50e1859b-984c-40f5-988e-b59692004329" valueTypeId="e1026a9a-653b-4e64-a06a-8062578d2445"/>
+    <selectionType typeId="7db822a9-99f3-4deb-b1e4-270b020fe63d" valueTypeId="09b6f34d-178e-4dcd-8963-200c37687503"/>
+    <listType typeId="c984b990-f8fd-4347-8b2a-09a91e39c027" valueTypeId="fc72035f-5b23-4c9a-8628-ea0ff3e913e7"/>
+    <managerType typeId="4a5793a7-605e-42f5-9e2d-8e181d8a0109" valueTypeId="624c9949-785d-421d-b04f-4f1376796538"/>
+  </producedTypes>
+  <name>ут_Проекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проекты (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ут_Проекты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ут_Проекты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a063e414-8a56-4baf-9930-2646be03736b">
+    <name>Заказчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ут_Заказчики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

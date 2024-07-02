@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a79809a5-a4fb-4196-b92e-de61fe4067a9">
+  <producedTypes>
+    <selectionType typeId="2dba689a-7360-44bf-9ac4-99cd8c73f2a3" valueTypeId="e01422c1-68bf-4159-952c-17fe1184128b"/>
+    <listType typeId="4c7a981c-494d-4c49-babd-b7470ba46a78" valueTypeId="987abcc9-eef9-4831-9c66-bd7a8b79575e"/>
+    <managerType typeId="1164b243-da5d-4a2a-ae5c-3745f7669760" valueTypeId="b55c6030-053a-484b-af76-d3a204c25456"/>
+    <recordSetType typeId="9526a120-b3a8-4fa3-bec1-332aa94a97bf" valueTypeId="0eb14c23-1d43-4224-be9d-47feb9502ad4"/>
+    <recordKeyType typeId="b17f2938-1e9c-469c-acf6-9731c9bcd228" valueTypeId="9f990be0-7b92-4ebe-926d-d1eeae32f4c7"/>
+    <recordType typeId="2c839786-663a-4614-9f7a-48df7a4a795e" valueTypeId="38ce0631-b3c5-4046-a250-812c03d45e8b"/>
+  </producedTypes>
+  <name>ут_Трудозатраты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Трудозатраты (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="e6fffa9a-2025-4b9b-b891-3b8a2dca0e04">
+    <name>Факт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="00828366-31a4-414a-bc52-8028e5b5f93b">
+    <name>Подзадача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подзадача</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ут_ПодзадачиВнутреннегоУчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

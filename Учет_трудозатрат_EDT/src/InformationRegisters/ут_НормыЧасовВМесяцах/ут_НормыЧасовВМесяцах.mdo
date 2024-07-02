@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f2a1f89-1111-4f5a-807d-80f9381a5c6d">
+  <producedTypes>
+    <selectionType typeId="7ea914c9-b576-44d2-bfea-15fd51d105f2" valueTypeId="be1c5030-94a4-4553-b696-cba0bcfa4e16"/>
+    <listType typeId="04d75970-7fd9-4bae-9491-3dfb5b1e400d" valueTypeId="8202d13f-ac44-41a4-8c27-f5a1d87a2fce"/>
+    <managerType typeId="7d12e972-0300-438b-9117-471661f15c2c" valueTypeId="b8817d93-30e4-4db5-b217-034c1727622b"/>
+    <recordSetType typeId="7b96c076-cf8d-477d-89e3-1092a2880a94" valueTypeId="88e15053-4d73-4006-aaaf-3238bfa6d4d0"/>
+    <recordKeyType typeId="9d89ff04-a929-44be-8015-a75cdda78649" valueTypeId="421ac66a-3942-45ef-a0bf-0d801cda46b5"/>
+    <recordType typeId="6b6cebed-1722-4fe6-a01b-3690b612fed7" valueTypeId="3b976900-e954-45f3-b361-47338bd4707b"/>
+    <recordManagerType typeId="e6335af3-201e-42d9-a1fd-5cb2ff39074c" valueTypeId="a2fd1648-7555-4393-a1f0-7a3d02a1f48a"/>
+  </producedTypes>
+  <name>ут_НормыЧасовВМесяцах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы часов в месяцах (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="386fb3a1-f2d0-44d1-adcd-90b867a04b20">
+    <name>Норма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cc23496b-2d50-4379-96a8-78e14c34b5a8">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ут_Месяцы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

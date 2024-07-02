@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подзадача</dataPath>
+			<field>Подзадача</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Уровень</dataPath>
+			<field>Уровень</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ставка</dataPath>
+			<field>Ставка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодМесяц</dataPath>
+			<field>ПериодМесяц</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Факт</dataPath>
+			<field>Факт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерПремии</dataPath>
+			<field>РазмерПремии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размер премии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Норма</dataPath>
+			<field>Норма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОкладПоУровню</dataPath>
+			<field>ОкладПоУровню</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оклад по уровню</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСНДФЛБезПремии</dataPath>
+			<field>СуммаСНДФЛБезПремии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма с НДФЛ без премии</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаБезНДФЛБезПремии</dataPath>
+			<field>СуммаБезНДФЛБезПремии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма без НДФЛ без премии</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДФЛБезПремии</dataPath>
+			<field>СуммаНДФЛБезПремии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма НДФЛ без премии</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПремииСНДФЛ</dataPath>
+			<field>СуммаПремииСНДФЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма премии с НДФЛ</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПремииБезНДФЛ</dataPath>
+			<field>СуммаПремииБезНДФЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма премии без НДФЛ</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПремииНДФЛ</dataPath>
+			<field>СуммаПремииНДФЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма премии НДФЛ</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаСНДФЛ</dataPath>
+			<field>СуммаСНДФЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма с НДФЛ</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаБезНДФЛ</dataPath>
+			<field>СуммаБезНДФЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма без НДФЛ</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДФЛ</dataPath>
+			<field>СуммаНДФЛ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма НДФЛ</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аванс</dataPath>
+			<field>Аванс</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аванс</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ут_ТрудозатратыОбороты.ПериодМесяц КАК ПериодМесяц,
+	ут_ТрудозатратыОбороты.ФактОборот КАК Факт
+ПОМЕСТИТЬ Выработка
+ИЗ
+	РегистрНакопления.ут_Трудозатраты.Обороты(, , Авто, ) КАК ут_ТрудозатратыОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ут_ТекущийУровень.Период КАК ПериодС,
+	ЕСТЬNULL(МИНИМУМ(ут_ТекущийУровень1.Период), ДАТАВРЕМЯ(2050, 1, 1)) КАК ПериодДо,
+	ут_ТекущийУровень.Уровень КАК Уровень
+ПОМЕСТИТЬ ТекущийУровень
+ИЗ
+	РегистрСведений.ут_ТекущийУровень КАК ут_ТекущийУровень
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ут_ТекущийУровень КАК ут_ТекущийУровень1
+		ПО ут_ТекущийУровень.Период &lt; ут_ТекущийУровень1.Период
+
+СГРУППИРОВАТЬ ПО
+	ут_ТекущийУровень.Период,
+	ут_ТекущийУровень.Уровень
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ут_ТекущийУровень.Период КАК ПериодС,
+	ЕСТЬNULL(МИНИМУМ(ут_ТекущийУровень1.Период), ДАТАВРЕМЯ(2050, 1, 1)) КАК ПериодДо,
+	ут_ТекущийУровень.Сумма КАК Сумма
+ПОМЕСТИТЬ РазмерПремии
+ИЗ
+	РегистрСведений.ут_РазмерПремии КАК ут_ТекущийУровень
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ут_РазмерПремии КАК ут_ТекущийУровень1
+		ПО ут_ТекущийУровень.Период &lt; ут_ТекущийУровень1.Период
+
+СГРУППИРОВАТЬ ПО
+	ут_ТекущийУровень.Период,
+	ут_ТекущийУровень.Сумма
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ут_ТекущийУровень.Период КАК ПериодС,
+	ЕСТЬNULL(МИНИМУМ(ут_ТекущийУровень1.Период), ДАТАВРЕМЯ(2050, 1, 1)) КАК ПериодДо,
+	ут_ТекущийУровень.Сумма КАК Сумма
+ПОМЕСТИТЬ РазмерАванса
+ИЗ
+	РегистрСведений.ут_РазмерАванса КАК ут_ТекущийУровень
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ут_РазмерАванса КАК ут_ТекущийУровень1
+		ПО ут_ТекущийУровень.Период &lt; ут_ТекущийУровень1.Период
+
+СГРУППИРОВАТЬ ПО
+	ут_ТекущийУровень.Период,
+	ут_ТекущийУровень.Сумма
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ут_ТекущийУровень.Период КАК ПериодС,
+	ЕСТЬNULL(МИНИМУМ(ут_ТекущийУровень1.Период), ДАТАВРЕМЯ(2050, 1, 1)) КАК ПериодДо,
+	ут_ТекущийУровень.Ставка КАК Ставка
+ПОМЕСТИТЬ СтавкаНДС
+ИЗ
+	РегистрСведений.ут_СтавкиНДС КАК ут_ТекущийУровень
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ут_СтавкиНДС КАК ут_ТекущийУровень1
+		ПО ут_ТекущийУровень.Период &lt; ут_ТекущийУровень1.Период
+
+СГРУППИРОВАТЬ ПО
+	ут_ТекущийУровень.Период,
+	ут_ТекущийУровень.Ставка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ут_ТекущийУровень.Период КАК ПериодС,
+	ЕСТЬNULL(МИНИМУМ(ут_ТекущийУровень1.Период), ДАТАВРЕМЯ(2050, 1, 1)) КАК ПериодДо,
+	ут_ТекущийУровень.Сумма КАК Сумма,
+	ут_ТекущийУровень.Уровень КАК Уровень
+ПОМЕСТИТЬ УровниРаботника
+ИЗ
+	РегистрСведений.ут_УровниРаботника КАК ут_ТекущийУровень
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ут_УровниРаботника КАК ут_ТекущийУровень1
+		ПО ут_ТекущийУровень.Период &lt; ут_ТекущийУровень1.Период
+
+СГРУППИРОВАТЬ ПО
+	ут_ТекущийУровень.Период,
+	ут_ТекущийУровень.Сумма,
+	ут_ТекущийУровень.Уровень
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Выработка.ПериодМесяц КАК ПериодМесяц,
+	Выработка.Факт КАК Факт,
+	ЕСТЬNULL(ТекущийУровень.Уровень, НЕОПРЕДЕЛЕНО) КАК Уровень,
+	ЕСТЬNULL(РазмерПремии.Сумма, 0) КАК РазмерПремии,
+	ЕСТЬNULL(СтавкаНДС.Ставка, 0) КАК Ставка,
+	ЕСТЬNULL(ут_НормыЧасовВМесяцах.Норма, 0) КАК Норма,
+	ЕСТЬNULL(РазмерАванса.Сумма, 0) КАК Аванс,
+	ЕСТЬNULL(УровниРаботника.Сумма, 0) КАК ОкладПоУровню
+ПОМЕСТИТЬ ОсновнаяТаблица
+ИЗ
+	Выработка КАК Выработка
+		ЛЕВОЕ СОЕДИНЕНИЕ ТекущийУровень КАК ТекущийУровень
+		ПО Выработка.ПериодМесяц &gt;= ТекущийУровень.ПериодС
+			И Выработка.ПериодМесяц &lt; ТекущийУровень.ПериодДо
+		ЛЕВОЕ СОЕДИНЕНИЕ УровниРаботника КАК УровниРаботника
+		ПО (ТекущийУровень.Уровень = УровниРаботника.Уровень)
+			И Выработка.ПериодМесяц &gt;= УровниРаботника.ПериодС
+			И Выработка.ПериодМесяц &lt; УровниРаботника.ПериодДо
+		ЛЕВОЕ СОЕДИНЕНИЕ РазмерПремии КАК РазмерПремии
+		ПО Выработка.ПериодМесяц &gt;= РазмерПремии.ПериодС
+			И Выработка.ПериодМесяц &lt; РазмерПремии.ПериодДо
+		ЛЕВОЕ СОЕДИНЕНИЕ РазмерАванса КАК РазмерАванса
+		ПО Выработка.ПериодМесяц &gt;= РазмерАванса.ПериодС
+			И Выработка.ПериодМесяц &lt; РазмерАванса.ПериодДо
+		ЛЕВОЕ СОЕДИНЕНИЕ СтавкаНДС КАК СтавкаНДС
+		ПО Выработка.ПериодМесяц &gt;= СтавкаНДС.ПериодС
+			И Выработка.ПериодМесяц &lt; СтавкаНДС.ПериодДо
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ут_НормыЧасовВМесяцах КАК ут_НормыЧасовВМесяцах
+		ПО (МЕСЯЦ(Выработка.ПериодМесяц) = ут_НормыЧасовВМесяцах.Месяц.Номер)
+			И (ГОД(Выработка.ПериодМесяц) = ГОД(ут_НормыЧасовВМесяцах.Период))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОсновнаяТаблица.ПериодМесяц КАК ПериодМесяц,
+	ОсновнаяТаблица.Факт КАК Факт,
+	ОсновнаяТаблица.Уровень КАК Уровень,
+	ОсновнаяТаблица.РазмерПремии КАК РазмерПремии,
+	ОсновнаяТаблица.Ставка КАК Ставка,
+	ОсновнаяТаблица.Норма КАК Норма,
+	ОсновнаяТаблица.ОкладПоУровню КАК ОкладПоУровню,
+	ОсновнаяТаблица.Аванс КАК Аванс,
+	ВЫБОР
+		КОГДА ОсновнаяТаблица.Норма = 0
+			ТОГДА 0
+		ИНАЧЕ ОсновнаяТаблица.ОкладПоУровню / ОсновнаяТаблица.Норма * ОсновнаяТаблица.Факт - ОсновнаяТаблица.РазмерПремии * ОсновнаяТаблица.Факт
+	КОНЕЦ КАК СуммаСНДФЛБезПремии,
+	ВЫБОР
+		КОГДА ОсновнаяТаблица.Норма = 0
+			ТОГДА 0
+		ИНАЧЕ ОсновнаяТаблица.ОкладПоУровню / ОсновнаяТаблица.Норма * ОсновнаяТаблица.Факт
+	КОНЕЦ - ВЫБОР
+		КОГДА ОсновнаяТаблица.Норма = 0
+			ТОГДА 0
+		ИНАЧЕ ОсновнаяТаблица.ОкладПоУровню / ОсновнаяТаблица.Норма * ОсновнаяТаблица.Факт
+	КОНЕЦ * (ОсновнаяТаблица.Ставка / 100) - (ОсновнаяТаблица.РазмерПремии * ОсновнаяТаблица.Факт - ОсновнаяТаблица.РазмерПремии * ОсновнаяТаблица.Факт * (ОсновнаяТаблица.Ставка / 100)) КАК СуммаБезНДФЛБезПремии,
+	ВЫБОР
+		КОГДА ОсновнаяТаблица.Норма = 0
+			ТОГДА 0
+		ИНАЧЕ ОсновнаяТаблица.ОкладПоУровню / ОсновнаяТаблица.Норма * ОсновнаяТаблица.Факт
+	КОНЕЦ * (ОсновнаяТаблица.Ставка / 100) - ОсновнаяТаблица.РазмерПремии * ОсновнаяТаблица.Факт * (ОсновнаяТаблица.Ставка / 100) КАК СуммаНДФЛБезПремии,
+	ОсновнаяТаблица.РазмерПремии * ОсновнаяТаблица.Факт КАК СуммаПремииСНДФЛ,
+	ОсновнаяТаблица.РазмерПремии * ОсновнаяТаблица.Факт - ОсновнаяТаблица.РазмерПремии * ОсновнаяТаблица.Факт * (ОсновнаяТаблица.Ставка / 100) КАК СуммаПремииБезНДФЛ,
+	ОсновнаяТаблица.РазмерПремии * ОсновнаяТаблица.Факт * (ОсновнаяТаблица.Ставка / 100) КАК СуммаПремииНДФЛ,
+	ВЫБОР
+		КОГДА ОсновнаяТаблица.Норма = 0
+			ТОГДА 0
+		ИНАЧЕ ОсновнаяТаблица.ОкладПоУровню / ОсновнаяТаблица.Норма * ОсновнаяТаблица.Факт
+	КОНЕЦ КАК СуммаСНДФЛ,
+	ВЫБОР
+		КОГДА ОсновнаяТаблица.Норма = 0
+			ТОГДА 0
+		ИНАЧЕ ОсновнаяТаблица.ОкладПоУровню / ОсновнаяТаблица.Норма * ОсновнаяТаблица.Факт
+	КОНЕЦ - ВЫБОР
+		КОГДА ОсновнаяТаблица.Норма = 0
+			ТОГДА 0
+		ИНАЧЕ ОсновнаяТаблица.ОкладПоУровню / ОсновнаяТаблица.Норма * ОсновнаяТаблица.Факт
+	КОНЕЦ * (ОсновнаяТаблица.Ставка / 100) КАК СуммаБезНДФЛ,
+	ВЫБОР
+		КОГДА ОсновнаяТаблица.Норма = 0
+			ТОГДА 0
+		ИНАЧЕ ОсновнаяТаблица.ОкладПоУровню / ОсновнаяТаблица.Норма * ОсновнаяТаблица.Факт
+	КОНЕЦ * (ОсновнаяТаблица.Ставка / 100) КАК СуммаНДФЛ
+ИЗ
+	ОсновнаяТаблица КАК ОсновнаяТаблица</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>СтавкаЧасаБезПремииБезНДФЛ</dataPath>
+		<expression>СуммаБезНДФЛБезПремии / выбор когда Факт = 0 тогда 1 иначе Факт конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ставка часа без премии без НДФЛ</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СтавкаЧасаСПремиейБезНДФЛ</dataPath>
+		<expression>СуммаБезНДФЛ/ выбор когда Факт = 0 тогда 1 иначе Факт конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ставка часа с премией без НДФЛ</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СтавкаЧасаБезПремииСНДФЛ</dataPath>
+		<expression>СуммаСНДФЛБезПремии/ выбор когда Факт = 0 тогда 1 иначе Факт конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ставка часа без премии с НДФЛ</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СтавкаЧасаСПремиейСНДФЛ</dataPath>
+		<expression>СуммаСНДФЛ/ выбор когда Факт = 0 тогда 1 иначе Факт конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ставка часа с премией с НДФЛ</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>15</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>Норма</dataPath>
+		<expression>Сумма(Норма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаБезНДФЛ</dataPath>
+		<expression>Сумма(СуммаБезНДФЛ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаБезНДФЛБезПремии</dataPath>
+		<expression>Сумма(СуммаБезНДФЛБезПремии)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаНДФЛ</dataPath>
+		<expression>Сумма(СуммаНДФЛ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаНДФЛБезПремии</dataPath>
+		<expression>Сумма(СуммаНДФЛБезПремии)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПремииБезНДФЛ</dataPath>
+		<expression>Сумма(СуммаПремииБезНДФЛ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПремииНДФЛ</dataPath>
+		<expression>Сумма(СуммаПремииНДФЛ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПремииСНДФЛ</dataPath>
+		<expression>Сумма(СуммаПремииСНДФЛ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСНДФЛ</dataPath>
+		<expression>Сумма(СуммаСНДФЛ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаСНДФЛБезПремии</dataPath>
+		<expression>Сумма(СуммаСНДФЛБезПремии)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Факт</dataPath>
+		<expression>Сумма(Факт)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Норма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Факт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма без премии</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаБезНДФЛБезПремии</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаНДФЛБезПремии</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаСНДФЛБезПремии</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Премия</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаПремииБезНДФЛ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаПремииНДФЛ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаПремииСНДФЛ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итого</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаБезНДФЛ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаНДФЛ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаСНДФЛ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>1a6eef64-033e-4a43-a8c0-0ba639362226</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Море</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ПериодМесяц</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Уровень</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ОкладПоУровню</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>РазмерПремии</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Ставка</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Аванс</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СтавкаЧасаБезПремииБезНДФЛ</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СтавкаЧасаСПремиейБезНДФЛ</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СтавкаЧасаБезПремииСНДФЛ</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СтавкаЧасаСПремиейСНДФЛ</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

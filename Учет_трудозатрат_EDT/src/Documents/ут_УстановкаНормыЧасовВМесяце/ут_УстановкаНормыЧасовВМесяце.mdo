@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc6a1253-62d2-4a27-a040-a677794cda61">
+  <producedTypes>
+    <objectType typeId="00f29f65-d2f2-45f2-9303-90cbac2018fb" valueTypeId="df7c541b-b7ee-424e-825c-7a130c2f5b7b"/>
+    <refType typeId="a2793c99-a768-43b6-8503-dc5b07365bda" valueTypeId="7da75027-d1cd-4d01-aa41-bb86f82d5c3b"/>
+    <selectionType typeId="26562ecc-1416-4971-a8ae-de0a2fd32d37" valueTypeId="60a3b8f3-496a-4f84-ad0c-055e1597dc51"/>
+    <listType typeId="b6eb1a32-58bf-485f-8005-f94e93adbc19" valueTypeId="7e62a981-eea9-4cae-b79f-731176cb2628"/>
+    <managerType typeId="ff4f9c10-88a8-42bc-b384-7f0e55e54efa" valueTypeId="e450e8c0-3f23-4918-a209-a3692b3cc950"/>
+  </producedTypes>
+  <name>ут_УстановкаНормыЧасовВМесяце</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка нормы часов в месяце (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ут_УстановкаНормыЧасовВМесяце.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ут_УстановкаНормыЧасовВМесяце.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ут_НормыЧасовВМесяцах</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="d90713ec-f447-4232-ad47-d3499303d777">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="5eac546f-feb4-4a49-a338-40354ba9043b">
+    <producedTypes>
+      <objectType typeId="f619b239-c4da-4d09-9e1d-04b99a544aa3" valueTypeId="f47e4225-9f58-4cee-8f93-1c8c7c822f9c"/>
+      <rowType typeId="a0f3a8f6-386c-4982-9ab1-d160c5049d36" valueTypeId="6b7909be-54c2-44b6-aded-4684dacfde0a"/>
+    </producedTypes>
+    <name>Нормы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормы</value>
+    </synonym>
+    <attributes uuid="2ec729ee-d47e-4c36-aeef-566c508a65a3">
+      <name>Месяц</name>
+      <synonym>
+        <key>ru</key>
+        <value>Месяц</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ут_Месяцы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="124d5f39-786a-4693-b5da-a4eafdb32feb">
+      <name>Норма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Норма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

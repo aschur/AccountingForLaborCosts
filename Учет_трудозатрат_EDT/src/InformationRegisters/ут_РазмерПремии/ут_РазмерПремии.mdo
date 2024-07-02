@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b7a530d-3b97-4ddb-9c8f-6d16cbd35c8c">
+  <producedTypes>
+    <selectionType typeId="d390b5a4-fe67-4d18-a7da-5f52baee894e" valueTypeId="97ed5f3e-c4f0-4125-bff6-a12d9b704e67"/>
+    <listType typeId="9c630f87-b824-4fd5-9751-d8ebc4b95dcf" valueTypeId="c6c9e825-f8cc-41cb-ab3d-34770ab308a3"/>
+    <managerType typeId="fa5f85eb-52d6-41b8-94bc-d1450ab2a8e2" valueTypeId="56a4d7de-ab2b-4b59-ba9e-a52ed3b3c998"/>
+    <recordSetType typeId="1612c870-1bbe-4e7f-9831-076d836112e1" valueTypeId="48a70d18-8bcf-40b4-a1a4-17da060f5e8a"/>
+    <recordKeyType typeId="664f12c9-1883-4476-962a-0e921c9db1fb" valueTypeId="df5e0a46-1dfa-4463-80c4-b1363bab61b6"/>
+    <recordType typeId="bff6965c-150b-48dc-9a16-20e2c507db7c" valueTypeId="d37d1812-c463-4b8a-9ce6-bc30f3d58fa0"/>
+    <recordManagerType typeId="faf50e52-58b6-4110-8de0-aab29a334938" valueTypeId="262cc048-ec85-40e0-a72b-ed3451f40888"/>
+  </producedTypes>
+  <name>ут_РазмерПремии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размер премии (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6dfb9296-e538-4ee8-a317-42d9a21a04c5">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27a33ee6-5684-4c95-9a97-53a0e33c72cf">
+  <producedTypes>
+    <objectType typeId="4ca18b25-fb46-4d89-93c1-0f93d59210b9" valueTypeId="b31433fc-ea28-4f77-a70e-3bc16b0eb57f"/>
+    <managerType typeId="df6c6c56-99b2-4cf7-8f56-4608ae2cd23f" valueTypeId="de740724-23a6-4a1b-b703-0b37d6ff1a23"/>
+  </producedTypes>
+  <name>ут_ПланФактПоВнутреннимЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>План факт по внутренним задачам (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ут_ПланФактПоВнутреннимЗадачам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="f5ac7bbe-993c-45e5-a29d-e91bb607f185">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

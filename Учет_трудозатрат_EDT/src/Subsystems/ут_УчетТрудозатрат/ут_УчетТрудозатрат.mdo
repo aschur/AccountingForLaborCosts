@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9996c1e-c095-49a8-a177-cc68f3ce2784">
+  <name>ут_УчетТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет трудозатрат</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ут_ЗадачиВнутреннегоУчета</content>
+  <content>Catalog.ут_ЗадачиПроектов</content>
+  <content>Catalog.ут_Заказчики</content>
+  <content>CommonModule.ут_ОбновлениеИнформационнойБазы</content>
+  <content>Document.ут_ВводТрудозатрат</content>
+  <content>Catalog.ут_ПодзадачиВнутреннегоУчета</content>
+  <content>AccumulationRegister.ут_Трудозатраты</content>
+  <content>Report.ут_Трудозатраты</content>
+  <content>Document.ут_ТехническийПроект</content>
+  <content>AccumulationRegister.ут_УчетПлановыхТрудозатрат</content>
+  <content>Report.ут_ПланФактПоВнутреннимЗадачам</content>
+  <content>Catalog.ут_ДоговорыЗаказчиков</content>
+  <content>CommonCommand.ут_ДополнительныеОбработки</content>
+  <content>CommandGroup.ут_ДокументыТрудозатрат</content>
+  <content>CommandGroup.ут_СправочникиТрудозатрат</content>
+  <content>Catalog.ут_Проекты</content>
+  <content>Catalog.ут_Месяцы</content>
+  <content>Catalog.ут_Уровни</content>
+  <content>InformationRegister.ут_УровниРаботника</content>
+  <content>Document.ут_УстановкаУровней</content>
+  <content>InformationRegister.ут_ТекущийУровень</content>
+  <content>Document.ут_УстановкаНормыЧасовВМесяце</content>
+  <content>InformationRegister.ут_НормыЧасовВМесяцах</content>
+  <content>InformationRegister.ут_СтавкиНДС</content>
+  <content>InformationRegister.ут_РазмерПремии</content>
+  <content>InformationRegister.ут_РазмерАванса</content>
+  <content>Report.ут_Зарплата</content>
+</mdclass:Subsystem>

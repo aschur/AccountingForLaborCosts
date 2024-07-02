@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cc48151-c68f-48b3-b93f-605ec4e180e8">
+  <producedTypes>
+    <objectType typeId="84d890a5-6686-4be7-b8dc-31618a5eb93a" valueTypeId="51852948-7cd4-48a3-9706-07fac682fab1"/>
+    <refType typeId="2e731f8c-bd21-4d1d-a31a-25334c0f9710" valueTypeId="410d9301-62dd-4e4c-a771-d654ed0a1936"/>
+    <selectionType typeId="d9bd1e0d-b28d-42b0-ad78-6fedb40f2cbb" valueTypeId="98bc46f5-761b-4e91-a547-9e50fa12b1de"/>
+    <listType typeId="221a6c80-08c9-4542-a0b4-b8917e0bbfdf" valueTypeId="66153108-80d5-4846-8224-6f506c06ae33"/>
+    <managerType typeId="f3df1c68-6268-40ef-a2db-5a6a495b4036" valueTypeId="f60add98-36a4-4462-8da9-4e7a3ef6b94d"/>
+  </producedTypes>
+  <name>ут_Месяцы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Месяцы (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ут_Месяцы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ут_Месяцы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="755bad99-e3dd-41a2-afaf-832ba2384f36">
+      <name>Август</name>
+      <description>Август</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="8bbd5c8d-aab3-4637-bd63-7d1bbc1388da">
+      <name>Апрель</name>
+      <description>Апрель</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="c4739566-9f95-4ffa-b827-d1101d992c35">
+      <name>Декабрь</name>
+      <description>Декабрь</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="b2f774f3-2186-4f21-b46c-17092cc4d91f">
+      <name>Июль</name>
+      <description>Июль</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="6f5d2351-f4c4-4cfe-a693-dceff774818d">
+      <name>Июнь</name>
+      <description>Июнь</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="50705d1f-78da-4dd5-b961-c83dce953e9e">
+      <name>Май</name>
+      <description>Май</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="77f1232f-3f5a-4e76-9355-230bd2f44e2c">
+      <name>Март</name>
+      <description>Март</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="b76325a8-b23f-4529-ad14-d7c0cd61c8c9">
+      <name>Ноябрь</name>
+      <description>Ноябрь</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="8d72e03d-6de8-4bff-be9c-d42a814b0765">
+      <name>Октябрь</name>
+      <description>Октябрь</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="fcf079eb-92b1-49d4-8a04-02625a4e0ac6">
+      <name>Сентябрь</name>
+      <description>Сентябрь</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="273c4a43-6a0d-4ca5-af2b-ee7476b02c06">
+      <name>Февраль</name>
+      <description>Февраль</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="35abcde6-9eb5-474a-9510-d586d20e4b97">
+      <name>Январь</name>
+      <description>Январь</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a0fcef04-7a1d-4686-bc33-28766c85fcad">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4b88acf-b554-4e0e-b1d8-a5b87a43c35a">
+  <producedTypes>
+    <selectionType typeId="c2c05d2e-6090-4b69-8535-1102c8053b18" valueTypeId="dbc5c23c-51b4-4a57-bc68-e1b4fe373696"/>
+    <listType typeId="9410a8ed-621d-4fac-bcdc-c27b23fd2ba8" valueTypeId="690c8d59-b807-4e81-9981-817f81875ea2"/>
+    <managerType typeId="31f2480c-f5d7-4613-ba47-31b99c4d784b" valueTypeId="752a89e7-e205-4e64-b403-774ee9db4460"/>
+    <recordSetType typeId="16418756-63d8-4a17-8f17-43e57cf92f54" valueTypeId="da4ade6e-1905-4561-9407-a6cd8217528f"/>
+    <recordKeyType typeId="85ba898e-9740-4df5-9bac-34cd0ddb2926" valueTypeId="5d9dfc7b-1b77-41b4-990d-40970dfac0cf"/>
+    <recordType typeId="6e5b7eeb-6f43-4785-8ae1-97e6c502ef5f" valueTypeId="c66b3c89-9e1a-4ef7-a8e6-0d40b5d67972"/>
+    <recordManagerType typeId="c7a49823-ac98-4c14-96fc-90caa2d0bf12" valueTypeId="29b7e55f-e660-40dc-a201-bd26b9ae0b18"/>
+  </producedTypes>
+  <name>ут_ТекущийУровень</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущий уровень (ут)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7ea3dbf1-ff30-49ef-b430-6c93405777be">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ут_Уровни</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>
